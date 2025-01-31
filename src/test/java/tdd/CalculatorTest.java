@@ -44,4 +44,18 @@ Calculator instance = new Calculator();
         int actual = instance.divide(2,2);
         assertEquals(expected,actual);
     }
+    @Test
+    @DisplayName("intial Test Demo")
+    void testAddString(){
+        int expected = 6;
+        int actual = instance.add("1,2,3");
+        assertEquals(expected,actual);
+    }
+    @Test
+    @DisplayName("intial Test Demo")
+    void testAddWithArray(){
+        int expected = 6;
+        int actual = instance.add(new int[]{1,2,3});
+        assertEquals(expected,actual);
+    }
 }
